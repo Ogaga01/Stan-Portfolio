@@ -12,7 +12,7 @@ const MobileNavbar: FC = () => {
   return (
     <>
       <div className={styles["mobile_navigation"]}>
-        <h1 className={styles["mobile_navigation--title"]}>S.C. Osi.</h1>
+        <h1 className={styles["mobile_navigation--title"]}>SC.</h1>
         <AiOutlineMenu
           className={styles["mobile_navigation--menu_icon"]}
           onClick={showMenu}
@@ -26,23 +26,13 @@ const MobileNavbar: FC = () => {
               onClick={showMenu}
             />
           </div>
-          <li
-            className={styles.navlink}
-            onClick={showMenu}
-          >
+          <li className={styles.navlink} onClick={showMenu}>
             Blogs
           </li>
-          <li
-            className={styles.navlink}
-            onClick={showMenu}
-          >
+          <li className={styles.navlink} onClick={showMenu}>
             Works
           </li>
-          <li
-            
-            className={styles.navlink}
-            onClick={showMenu}
-          >
+          <li className={styles.navlink} onClick={showMenu}>
             Contact
           </li>
         </ul>
