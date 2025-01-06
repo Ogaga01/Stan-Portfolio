@@ -7,9 +7,20 @@ const Navbar: FC = () => {
       <div className={styles["navbar"]}>
         <h2 className={styles["heading"]}>SC.</h2>
         <ul className={styles["list"]}>
-          <li className={styles["item"]}>Blogs</li>
-          <li className={styles["item"]}>Works</li>
-          <li className={styles["item"]}>Contact</li>
+          <a
+            target="blank"
+            href="https://theswiish.substack.com/"
+            className={styles["item"]}
+          >
+            Blogs
+          </a>
+          <a
+            target="blank"
+            href="https://www.linkedin.com/in/0sc/ "
+            className={styles["item"]}
+          >
+            Contact
+          </a>
         </ul>
       </div>
     </div>

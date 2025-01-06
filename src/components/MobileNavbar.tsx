@@ -26,15 +26,22 @@ const MobileNavbar: FC = () => {
               onClick={showMenu}
             />
           </div>
-          <li className={styles.navlink} onClick={showMenu}>
+          <a
+            target="blank"
+            href="https://theswiish.substack.com/"
+            className={styles.navlink}
+            onClick={showMenu}
+          >
             Blogs
-          </li>
-          <li className={styles.navlink} onClick={showMenu}>
-            Works
-          </li>
-          <li className={styles.navlink} onClick={showMenu}>
+          </a>
+          <a
+            target="blank"
+            href="https://www.linkedin.com/in/0sc/ "
+            className={styles.navlink}
+            onClick={showMenu}
+          >
             Contact
-          </li>
+          </a>
         </ul>
       </nav>
     </>
