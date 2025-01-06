@@ -2,8 +2,7 @@ import { Work } from "./types";
 
 export const works: Work[] = [
   {
-    title:
-      "Curating memorable tech experiences with the Africa Startup Festival and the Africa Technology Expo.",
+    title: `Curating memorable tech experiences with the Africa Startup Festival and the Africa Technology Expo. (Current)`,
     description:
       "I stay at the forefront of the brand communications for the Africa Startup Festival, and the Africa Technology Expo. Crafting design ideas, content and strategy framework, partnership, media, and influencer engagement. ",
     image: "./../../public/images/startup.jpg",

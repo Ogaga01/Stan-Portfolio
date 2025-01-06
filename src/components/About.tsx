@@ -1,5 +1,5 @@
 import { FC } from "react";
-import headshot from "./../images/headshot.jpg";
+import headshot from "./../images/stan2.jpg";
 import styles from "./../sass/_about.module.scss";
 
 const About: FC = () => {
@@ -14,8 +14,12 @@ const About: FC = () => {
             venture capital whilst mumbling about tech.
           </p>
           <p className={styles["introduction2"]}>
-            Big fan of crazy ideas, a hobbyist photographer, an erratic reader,
-            and a rap aficionado deeply into electronic beats.
+            I'm a big fan of crazy ideas,{" "}
+            <a href="https://vsco.co/swxxshh/gallery">
+              a hobbyist photographer
+            </a>
+            , an erratic reader, and a rap aficionado deeply into electronic
+            beats.
           </p>
         </div>
         <div className={styles["image"]}>

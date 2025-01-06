@@ -11,13 +11,15 @@ const WorkCard: FC<Props> = ({ props }) => {
 
   return (
     <div className={styles.workcard}>
-      <div>
-        <img src={image} alt={link} />
+      <div className={styles["image"]}>
+        <img className={styles["img"]} src={image} alt={link} />
       </div>
-      <div>
-        <h1>{title}</h1>
-        <p>{description}</p>
-        <p>{link}</p>
+      <div className={styles["details"]}>
+        <h1 className={styles["work"]}>{title}</h1>
+        <p className={styles["desc"]}>{description}</p>
+        <a href={link} className={styles["link"]}>
+          Visit site
+        </a>
       </div>
     </div>
   );
