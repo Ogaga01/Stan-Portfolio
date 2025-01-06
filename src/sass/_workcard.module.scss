@@ -9,6 +9,10 @@
 
 .image {
   width: 20%;
+
+  @include respond(mob-nav) {
+    width: 35%;
+  }
 }
 
 .img {
@@ -16,6 +20,10 @@
   height: 15rem;
   object-fit: cover;
   border: 1rem solid $color-primary;
+
+  @include respond(mob-nav) {
+    height: 20rem;
+  }
 }
 
 .details {

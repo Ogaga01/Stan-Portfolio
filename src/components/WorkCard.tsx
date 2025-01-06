@@ -17,7 +17,7 @@ const WorkCard: FC<Props> = ({ props }) => {
       <div className={styles["details"]}>
         <h1 className={styles["work"]}>{title}</h1>
         <p className={styles["desc"]}>{description}</p>
-        <a href={link} className={styles["link"]}>
+        <a href={link} target="blank" className={styles["link"]}>
           Visit site
         </a>
       </div>
