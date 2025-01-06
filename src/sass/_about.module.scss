@@ -54,6 +54,16 @@
   }
 }
 
+.introduction2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-top: 1rem;
+
+  @include respond(mob-nav) {
+    font-size: 2.5rem;
+  }
+}
+
 .image {
   width: 30%;
   display: flex;

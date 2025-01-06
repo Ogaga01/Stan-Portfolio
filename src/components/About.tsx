@@ -11,9 +11,11 @@ const About: FC = () => {
           <p className={styles["introduction"]}>
             Hello, I’m Stanley. I’m a brand communications person who dabbles in
             content marketing and occasionally into growth strategies, and
-            venture capital whilst mumbling about tech. Big fan of crazy ideas,
-            a hobbyist photographer, an erratic reader, and a rap aficionado
-            deeply into electronic beats.
+            venture capital whilst mumbling about tech.
+          </p>
+          <p className={styles["introduction2"]}>
+            Big fan of crazy ideas, a hobbyist photographer, an erratic reader,
+            and a rap aficionado deeply into electronic beats.
           </p>
         </div>
         <div className={styles["image"]}>
