@@ -1,5 +1,5 @@
 import { FC } from "react";
-import headshot from "./../images/stan2.jpg";
+import headshot from "./../images/stan-web.jpg";
 import styles from "./../sass/_about.module.scss";
 
 const About: FC = () => {
