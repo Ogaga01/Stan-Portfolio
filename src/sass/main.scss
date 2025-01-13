@@ -37,7 +37,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "IBM Plex Sans", serif;
+  font-family: serif;
   background-color: $background;
 
   @include respond(tab-port) {
