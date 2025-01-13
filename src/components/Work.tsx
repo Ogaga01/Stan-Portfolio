@@ -25,6 +25,7 @@ const Work: FC = () => {
               influencer engagement.
             </p>
             <a
+              target="blank"
               className={styles["link"]}
               href="https://www.africastartupfestival.com/en"
             >
@@ -47,6 +48,7 @@ const Work: FC = () => {
               physical activation event.
             </p>
             <a
+              target="blank"
               className={styles["link2"]}
               href="https://techcabal.com/2022/09/22/hankara-bridges-the-content-gap/"
             >
@@ -70,6 +72,7 @@ const Work: FC = () => {
               product concepts and features.
             </p>
             <a
+              target="blank"
               className={styles["link"]}
               href="https://vc4a.com/ventures/bufexx/"
             >
