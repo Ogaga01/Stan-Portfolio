@@ -14,12 +14,9 @@ const About: FC = () => {
             venture capital whilst mumbling about tech.
           </p>
           <p className={styles["introduction2"]}>
-            I'm a big fan of crazy ideas,{" "}
-            <a href="https://vsco.co/swxxshh/gallery">
-              a hobbyist photographer
-            </a>
-            , an erratic reader, and a rap aficionado deeply into electronic
-            beats.
+            I'm a big fan of crazy ideas, a hobbyist{" "}
+            <a href="https://vsco.co/swxxshh/gallery">photographer</a>, an
+            erratic reader, and a rap aficionado deeply into electronic beats.
           </p>
         </div>
         <div className={styles["image"]}>

@@ -8,7 +8,7 @@ const Post: FC = () => {
     <section className={styles.blogs}>
       <div className={styles["content"]}>
         <div className={styles["nav"]}>
-          <h2>Things I Have Written</h2>
+          <h2>THINGS I HAVE WRITTEN</h2>
           <a
             className={styles["link"]}
             target="blank"
