@@ -37,7 +37,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: serif;
+  font-family: "Sora", serif;
   background-color: $background;
 
   @include respond(tab-port) {
