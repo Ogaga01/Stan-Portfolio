@@ -34,16 +34,25 @@
 .w1 {
   width: 100%;
   background-color: $color-primary;
+  transition: all 1s;
 }
 
 .w2 {
   width: 100%;
   background-color: $color-white;
+  transition: all 1s;
 }
 
 .w3 {
   width: 100%;
   background-color: $color-primary;
+  transition: all 1s;
+}
+
+.w4 {
+  width: 100%;
+  background-color: $color-white;
+  transition: all 1s;
 }
 
 .work1 {
@@ -122,6 +131,40 @@
   }
 }
 
+.work4 {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 40vh;
+  width: 50%;
+  color: $color-primary;
+  justify-self: center;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @include respond(tab-land) {
+    width: 80%;
+  }
+
+  @include respond(tab-port) {
+    width: 90%;
+  }
+
+  @include respond(mob-nav) {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 50vh;
+  }
+}
+
+.heading {
+  width: 45%;
+  justify-self: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: $color-primary;
+}
+
 .image {
   height: 80%;
   width: 35%;
@@ -184,28 +227,66 @@
 
 .link {
   width: 20%;
-  height: 1.75rem;
   background-color: $color-white;
   color: $color-primary;
   text-align: center;
   font-size: 1.3rem;
-  border-radius: 5%;
+  padding: 8px 20px;
+  border-radius: 27px;
+  transition: all 1s;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    border: 2px solid $color-white;
+  }
 
   @include respond(mob-nav) {
-    width: 10%;
+    width: 20%;
+  }
+
+  @include respond(phone) {
+    width: 30%;
+  }
+
+  @include respond(tab-land) {
+    width: 30%;
+  }
+
+  @include respond(tab-port) {
+    width: 30%;
   }
 }
 
 .link2 {
-  width: 25%;
-  height: 2rem;
+  width: 20%;
   background-color: $color-primary;
   color: $color-white;
   text-align: center;
   font-size: 1.3rem;
-  border-radius: 20%;
+  padding: 8px 20px;
+  border-radius: 27px;
+  transition: all 1s;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+  }
 
   @include respond(mob-nav) {
-    width: 10%;
+    width: 20%;
+  }
+
+  @include respond(phone) {
+    width: 30%;
+  }
+
+  @include respond(tab-land) {
+    width: 30%;
+  }
+
+  @include respond(tab-port) {
+    width: 30%;
   }
 }

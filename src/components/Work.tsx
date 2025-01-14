@@ -2,11 +2,15 @@ import { FC } from "react";
 import workimage1 from "./../images/startup.jpg";
 import workimage2 from "./../images/hanku.jpg";
 import workimage3 from "./../images/buffex.jpg";
+import workimage4 from "./../images/gwala.jpg";
 import styles from "./../sass/_works.module.scss";
 
 const Work: FC = () => {
   return (
     <section className={styles.work}>
+      <div className={styles.heading}>
+        <h1 className={styles["h1"]}>FEATURED PROJECTS</h1>
+      </div>
       <div className={styles.w1}>
         <div className={styles["work1"]}>
           <div className={styles["image"]}>
@@ -75,6 +79,31 @@ const Work: FC = () => {
               target="blank"
               className={styles["link"]}
               href="https://vc4a.com/ventures/bufexx/"
+            >
+              Visit Site
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={styles.w4}>
+        <div className={styles["work4"]}>
+          <div className={styles["image"]}>
+            <img className={styles["img"]} src={workimage4} alt="current" />
+          </div>
+          <div className={styles["texts"]}>
+            <h2 className={styles["title"]}>
+              Enabling Group Banking with Gwala
+            </h2>
+            <p className={styles["description"]}>
+              I helped improve early product features and user experience
+              through user feedback, achieving a 60% retention rate, and
+              developing the initial product lifecycle, go-to-market strategy,
+              and acquisition roadmap with early team members.
+            </p>
+            <a
+              target="blank"
+              className={styles["link2"]}
+              href="https://www.ourgwala.com/"
             >
               Visit Site
             </a>
