@@ -78,6 +78,10 @@
     flex-direction: column-reverse;
     height: 60vh;
   }
+
+  @include respond(phone) {
+    height: 80vh;
+  }
 }
 
 .work2 {
