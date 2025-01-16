@@ -9,34 +9,39 @@ const Footer: FC = () => {
   return (
     <section className={styles.footer}>
       <div className={styles["content"]}>
-        <a
-          className={styles["socials"]}
-          href="wa.me/+2348034467139"
-          target="blank"
-        >
-          <BsWhatsapp className={styles["icon"]} />
-        </a>
-        <a
-          className={styles["socials"]}
-          href="mailto:vocal4real@gmail.com"
-          target="blank"
-        >
-          <CgMail className={styles["icon"]} />
-        </a>
-        <a
-          className={styles["socials"]}
-          href="https://www.linkedin.com/in/0sc/"
-          target="blank"
-        >
-          <RiLinkedinBoxLine className={styles["icon"]} />
-        </a>
-        <a
-          className={styles["socials"]}
-          href="https://x.com/swxsh_etc"
-          target="blank"
-        >
-          <FaXTwitter className={styles["icon"]} />
-        </a>
+        <div>
+          <p className={styles["name"]}>Stanley Osi.</p>
+        </div>
+        <div className={styles["links"]}>
+          <a
+            className={styles["socials"]}
+            href="https://wa.me/+2348034467139"
+            target="blank"
+          >
+            <BsWhatsapp className={styles["icon"]} />
+          </a>
+          <a
+            className={styles["socials"]}
+            href="https://mailto:vocal4real@gmail.com"
+            target="blank"
+          >
+            <CgMail className={styles["icon"]} />
+          </a>
+          <a
+            className={styles["socials"]}
+            href="https://www.linkedin.com/in/0sc/"
+            target="blank"
+          >
+            <RiLinkedinBoxLine className={styles["icon"]} />
+          </a>
+          <a
+            className={styles["socials"]}
+            href="https://x.com/swxsh_etc"
+            target="blank"
+          >
+            <FaXTwitter className={styles["icon"]} />
+          </a>
+        </div>
       </div>
     </section>
   );
