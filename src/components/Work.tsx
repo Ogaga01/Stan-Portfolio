@@ -1,6 +1,6 @@
 import { FC } from "react";
 import workimage1 from "./../images/startup.jpg";
-import workimage2 from "./../images/hankara.jpg";
+import workimage2 from "./../images/hankara2.jpg";
 import workimage3 from "./../images/buffex.jpg";
 import workimage4 from "./../images/gwala2.jpg";
 import styles from "./../sass/_works.module.scss";
