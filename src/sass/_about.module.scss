@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "animation";
 
 .body {
   width: 100%;
@@ -18,6 +19,9 @@
   padding: 2rem;
   justify-content: space-around;
   height: 70vh;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
   // margin-top: 3rem;
 
   @include respond(tab-land) {
