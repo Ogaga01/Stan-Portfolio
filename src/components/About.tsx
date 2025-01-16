@@ -9,14 +9,15 @@ const About: FC = () => {
         <div className={styles["text"]}>
           <h1 className={styles["heading1"]}>Hello, I'm Stanley👋🏽</h1>
           <p className={styles["introduction"]}>
-            I’m a brand communications person who dabbles in content marketing
-            and occasionally into growth strategies, and venture capital whilst
-            mumbling about tech.
+            I’m a brand communications professional with some skin in content
+            marketing, growth strategy, and venture capital. I also occasionally
+            mumble about tech.
           </p>
           <p className={styles["introduction2"]}>
             I'm a big fan of crazy ideas, a hobbyist{" "}
             <a href="https://vsco.co/swxxshh/gallery">photographer</a>, an
-            erratic reader, and a rap aficionado deeply into electronic beats.
+            erratic reader, and a rap aficionado who is deeply into electronic
+            beats.
           </p>
         </div>
         <div className={styles["image"]}>
