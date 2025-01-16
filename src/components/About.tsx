@@ -9,9 +9,9 @@ const About: FC = () => {
         <div className={styles["text"]}>
           <h1 className={styles["heading1"]}>Hello, I'm Stanley👋🏽</h1>
           <p className={styles["introduction"]}>
-            Hello, I’m Stanley. I’m a brand communications person who dabbles in
-            content marketing and occasionally into growth strategies, and
-            venture capital whilst mumbling about tech.
+            I’m a brand communications person who dabbles in content marketing
+            and occasionally into growth strategies, and venture capital whilst
+            mumbling about tech.
           </p>
           <p className={styles["introduction2"]}>
             I'm a big fan of crazy ideas, a hobbyist{" "}
