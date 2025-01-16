@@ -10,8 +10,8 @@ const About: FC = () => {
           <h1 className={styles["heading1"]}>Hello, I'm Stanley👋🏽</h1>
           <p className={styles["introduction"]}>
             I’m a brand communications professional with some skin in content
-            marketing, growth strategy, and venture capital. I also occasionally
-            mumble about tech.
+            marketing, growth strategy, and venture capital. I occasionally
+            mumble about tech too.
           </p>
           <p className={styles["introduction2"]}>
             I'm a big fan of crazy ideas, a hobbyist{" "}
