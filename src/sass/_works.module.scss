@@ -166,6 +166,7 @@
   font-size: 1.5rem;
 
   @include respond(mob-nav) {
+    padding: left 2rem;
     width: 90%;
   }
 }
