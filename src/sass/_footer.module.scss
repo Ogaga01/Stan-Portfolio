@@ -26,7 +26,6 @@
   }
 
   @include respond(mob-nav) {
-    margin-top: 3rem;
     justify-self: center;
     width: 100%;
   }

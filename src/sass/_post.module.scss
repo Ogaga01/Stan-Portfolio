@@ -5,6 +5,8 @@
   width: 100%;
   background-color: $color-primary;
   height: 40rem;
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
 
   @include respond(mob-nav) {
     height: auto;
@@ -43,7 +45,7 @@
 
   @include respond(mob-nav) {
     align-self: center;
-    width: 80%;
+    width: 90%;
   }
 }
 
