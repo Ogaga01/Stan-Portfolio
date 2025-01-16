@@ -32,7 +32,7 @@ const MobileNavbar: FC = () => {
             className={styles.navlink}
             onClick={showMenu}
           >
-            Blogs
+            Blog
           </a>
           <a
             target="blank"

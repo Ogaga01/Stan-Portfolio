@@ -12,7 +12,7 @@ const Navbar: FC = () => {
             href="https://theswiish.substack.com/"
             className={styles["item"]}
           >
-            Blogs
+            Blog
           </a>
           <a
             target="blank"

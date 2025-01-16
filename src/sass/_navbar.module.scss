@@ -7,7 +7,7 @@
 
 .navbar {
   padding: 2rem;
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +36,17 @@
 }
 
 .item {
+  background-color: $color-primary;
+  color: $color-white;
+  text-align: center;
   font-size: 1.3rem;
-  color: $color-primary;
+  padding: 8px 20px;
+  border-radius: 27px;
+  transition: all 1s;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+  }
 }
