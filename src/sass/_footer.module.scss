@@ -3,8 +3,8 @@
 
 .footer {
   width: 100%;
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: $color-white;
+  color: $color-primary;
   margin-bottom: 0;
 }
 
@@ -15,7 +15,6 @@
   justify-content: space-between;
   height: 4rem;
   padding: 1.2rem;
-  margin-top: 2rem;
   justify-self: center;
 
   @include respond(tab-land) {
@@ -46,7 +45,7 @@
 }
 
 .socials {
-  color: $color-white;
+  color: $color-primary;
   width: 25%;
 }
 

@@ -19,4 +19,10 @@ export const posts: Post[] = [
     description: "...so much ado about African Tech",
     link: "https://theswiish.substack.com/p/trying-to-make-sense-of-african-tech",
   },
+  {
+    title: "EVERYTHING COMPOUNDS",
+    image: "/images/compounds.jpg",
+    description: "crumbs and crumbs till the cookie drops.",
+    link: "https://theswiish.substack.com/p/everything-compounds",
+  },
 ];
