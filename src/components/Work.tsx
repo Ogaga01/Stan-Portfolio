@@ -9,7 +9,7 @@ const Work: FC = () => {
   return (
     <section className={styles.work}>
       <div className={styles.heading}>
-        <h1 className={styles["h1"]}>WHAT I'VE HELPED BUILT</h1>
+        <h1 className={styles["h1"]}>WHAT I'VE HELPED BUILD</h1>
       </div>
       <div className={styles.w1}>
         <div className={styles["work1"]}>
