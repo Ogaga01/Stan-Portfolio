@@ -15,9 +15,9 @@ const About: FC = () => {
           </p>
           <p className={styles["introduction2"]}>
             I'm a big fan of crazy ideas, a hobbyist{" "}
-            <a href="https://vsco.co/swxxshh/gallery">photographer</a>, an
-            erratic reader, and a rap aficionado who is deeply into electronic
-            beats.
+            <a href="https://vsco.co/swxxshh/gallery">photographer</a>, a
+            seasonal poet, an erratic reader, and a rap aficionado who is deeply
+            into electronic beats.
           </p>
         </div>
         <div className={styles["image"]}>
