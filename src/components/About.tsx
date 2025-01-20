@@ -14,10 +14,10 @@ const About: FC = () => {
             mumble about tech too.
           </p>
           <p className={styles["introduction2"]}>
-            I'm a big fan of crazy ideas, a hobbyist{" "}
-            <a href="https://vsco.co/swxxshh/gallery">photographer</a>, a
-            seasonal poet, an erratic reader, and a rap aficionado who is deeply
-            in love with electronic beats.
+            I'm a big fan of crazy ideas, hobbyist{" "}
+            <a href="https://vsco.co/swxxshh/gallery">photographer</a>, seasonal
+            poet, an erratic reader, and a rap aficionado who is deeply in love
+            with electronic beats.
           </p>
         </div>
         <div className={styles["image"]}>
