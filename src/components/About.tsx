@@ -17,7 +17,7 @@ const About: FC = () => {
             I'm a big fan of crazy ideas, a hobbyist{" "}
             <a href="https://vsco.co/swxxshh/gallery">photographer</a>, a
             seasonal poet, an erratic reader, and a rap aficionado who is deeply
-            into electronic beats.
+            in love with electronic beats.
           </p>
         </div>
         <div className={styles["image"]}>
