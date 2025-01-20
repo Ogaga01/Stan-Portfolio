@@ -81,7 +81,7 @@ const Work: FC = () => {
               </h2>
               <p className={styles["description"]}>
                 I helped improve early product features and user experience
-                through user feedback, achieving a 60% retention rate, and
+                through user feedback, achieving a large retention rate, and
                 developing the initial product lifecycle, go-to-market strategy,
                 and acquisition roadmap with early team members.
               </p>
@@ -114,7 +114,7 @@ const Work: FC = () => {
               </h2>
               <p className={styles["description"]}>
                 I collaborated with the founder of Hankara to enhance
-                visibility, foster partnerships, and lead the team of three,
+                visibility, foster partnerships, and led the team of three,
                 while also managing two flagship initiatives: an accelerator
                 program and a physical activation event.
               </p>
