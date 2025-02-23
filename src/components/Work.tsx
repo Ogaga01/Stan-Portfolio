@@ -67,6 +67,7 @@ const Work: FC = () => {
       <div className={styles.heading}>
         <h1 className={styles["h1"]}>PAST EXPERIENCES</h1>
       </div>
+      {/* <div className={styles.line}></div> */}
       <motion.div
         variants={cardVariants}
         initial="offscreen"
