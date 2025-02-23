@@ -27,7 +27,7 @@ const Work: FC = () => {
   return (
     <section className={styles.work}>
       <div className={styles.heading}>
-        <h1 className={styles["h1"]}>WHAT I'VE HELPED BUILD</h1>
+        <h1 className={styles["h1"]}>CURRENT</h1>
       </div>
       <motion.div
         variants={cardVariants}
@@ -42,7 +42,6 @@ const Work: FC = () => {
               <img className={styles["img"]} src={ouicapital} alt="current" />
             </div>
             <div className={styles["texts"]}>
-              <p className={styles.current}>Current</p>
               <h2 className={styles["title"]}>
                 Engaging Platforms and Community at Africa’s foremost VC firm,
                 Oui Capital.
@@ -65,6 +64,9 @@ const Work: FC = () => {
           </div>
         </div>
       </motion.div>
+      <div className={styles.heading}>
+        <h1 className={styles["h1"]}>PAST EXPERIENCES</h1>
+      </div>
       <motion.div
         variants={cardVariants}
         initial="offscreen"
