@@ -27,7 +27,7 @@ export const posts: Post[] = [
     link: "https://theswiish.substack.com/p/trying-to-make-sense-of-african-tech",
   },
   {
-    title: "EVERYTHING COMPOUNDS",
+    title: "Everything Compounds",
     description: "crumbs and crumbs till the cookie drops.",
     link: "https://theswiish.substack.com/p/everything-compounds",
   },
