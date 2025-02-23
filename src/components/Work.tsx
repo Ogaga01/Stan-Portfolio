@@ -1,5 +1,6 @@
 import { FC, useRef } from "react";
 import { motion, Variants } from "framer-motion";
+import ouicapital from "./../images/oui.jpg";
 import workimage1 from "./../images/startup.jpg";
 import workimage2 from "./../images/hankara2.jpg";
 import workimage3 from "./../images/buffex.jpg";
@@ -35,13 +36,48 @@ const Work: FC = () => {
         viewport={{ root: scrollRef, once: true }}
         className={styles["project"]}
       >
+        <div className={styles.w2}>
+          <div className={styles["currents"]}>
+            <div className={styles["image"]}>
+              <img className={styles["img"]} src={ouicapital} alt="current" />
+            </div>
+            <div className={styles["texts"]}>
+              <p className={styles.current}>Current</p>
+              <h2 className={styles["title"]}>
+                Engaging Platforms and Community at Africa’s foremost VC firm,
+                Oui Capital.
+              </h2>
+              <p className={styles["description"]}>
+                In this role, I wear several hats. One is collaborating with the
+                investment team to craft announcements and provide strategic
+                support to portfolio companies. The other involves planning and
+                executing community events and fostering partnerships and
+                engagement within the startup ecosystem.
+              </p>
+              <a
+                target="blank"
+                className={styles["link2"]}
+                href="https://www.ouicapital.vc/"
+              >
+                Visit Site
+              </a>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
+        variants={cardVariants}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ root: scrollRef, once: true }}
+        className={styles["project"]}
+      >
         <div className={styles.w1}>
           <div className={styles["work1"]}>
             <div className={styles["image"]}>
               <img className={styles["img"]} src={workimage1} alt="current" />
             </div>
             <div className={styles["texts"]}>
-              <p className={styles.current}>Current</p>
               <h2 className={styles["title"]}>
                 Curating memorable tech experiences with the Africa Startup
                 Festival and the Africa Technology Expo.

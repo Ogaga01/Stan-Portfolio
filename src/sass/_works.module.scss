@@ -57,6 +57,7 @@
 
 .work1 {
   display: flex;
+  flex-direction: row-reverse;
   height: 45vh;
   width: 70%;
   color: $color-white;
@@ -86,7 +87,6 @@
 
 .work2 {
   display: flex;
-  flex-direction: row-reverse;
   height: 40vh;
   width: 70%;
   color: $color-primary;
@@ -112,6 +112,7 @@
 
 .work3 {
   display: flex;
+  flex-direction: row-reverse;
   height: 40vh;
   width: 70%;
   color: $color-white;
@@ -137,7 +138,6 @@
 
 .work4 {
   display: flex;
-  flex-direction: row-reverse;
   height: 40vh;
   width: 70%;
   color: $color-primary;
@@ -202,11 +202,36 @@
   }
 }
 
+.currents {
+  display: flex;
+  height: 40vh;
+  width: 70%;
+  color: $color-primary;
+  justify-self: center;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @include respond(tab-land) {
+    width: 80%;
+  }
+
+  @include respond(tab-port) {
+    width: 90%;
+  }
+
+  @include respond(mob-nav) {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 50vh;
+  }
+}
+
 .current {
   width: 15%;
   height: 1.75rem;
-  background-color: $color-white;
-  color: $color-primary;
+  background-color: $color-primary;
+  color: $color-white;
   text-align: center;
   font-size: 1.4rem;
 
