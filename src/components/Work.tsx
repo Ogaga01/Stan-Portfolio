@@ -1,9 +1,10 @@
 import { FC, useRef } from "react";
 import { motion, Variants } from "framer-motion";
-import workimage1 from "./../images/startup.jpg";
 import workimage2 from "./../images/hankara2.jpg";
 import workimage3 from "./../images/buffex.jpg";
 import workimage4 from "./../images/gwala2.jpg";
+import spark from "./../images/spark3.jpg";
+import oui from "./../images/oui.jpg";
 import styles from "./../sass/_works.module.scss";
 
 const cardVariants: Variants = {
@@ -25,9 +26,6 @@ const Work: FC = () => {
 
   return (
     <section className={styles.work}>
-      <div className={styles.heading}>
-        <h1 className={styles["h1"]}>WHAT I'VE HELPED BUILD</h1>
-      </div>
       <motion.div
         variants={cardVariants}
         initial="offscreen"
@@ -36,15 +34,50 @@ const Work: FC = () => {
         className={styles["project"]}
       >
         <div className={styles.w1}>
-          <div className={styles["work1"]}>
+          <div className={styles["currentwork"]}>
             <div className={styles["image"]}>
-              <img className={styles["img"]} src={workimage1} alt="current" />
+              <img className={styles["img"]} src={oui} alt="current" />
             </div>
             <div className={styles["texts"]}>
               <p className={styles.current}>Current</p>
               <h2 className={styles["title"]}>
-                Curating memorable tech experiences with the Africa Startup
-                Festival and the Africa Technology Expo.
+                Engaging Platforms and Community at Africa’s foremost VC firm,
+                Oui Capital.
+              </h2>
+              <p className={styles["description"]}>
+                I collaborate with the investment team on announcements and
+                support for portfolio companies. Along with planning community
+                events and fostering partnerships in the startup ecosystem.
+              </p>
+              <a
+                target="blank"
+                className={styles["link"]}
+                href="https://www.ouicapital.vc/"
+              >
+                Visit Site
+              </a>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+      <div className={styles.heading}>
+        <h1 className={styles["h1"]}>PAST EXPERIENCES</h1>
+      </div>
+      <motion.div
+        variants={cardVariants}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ root: scrollRef, once: true }}
+        className={styles["project"]}
+      >
+        <div className={styles.w2}>
+          <div className={styles["work2"]}>
+            <div className={styles["image"]}>
+              <img className={styles["img"]} src={spark} alt="spark" />
+            </div>
+            <div className={styles["texts"]}>
+              <h2 className={styles["title"]}>
+                Curating memorable tech experiences with the Spark HQ
               </h2>
               <p className={styles["description"]}>
                 I stay at the forefront of brand communications for the Africa
@@ -54,8 +87,41 @@ const Work: FC = () => {
               </p>
               <a
                 target="blank"
+                className={styles["link2"]}
+                href="https://sparkafrica.co/"
+              >
+                Visit Site
+              </a>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
+        variants={cardVariants}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ root: scrollRef, once: true }}
+        className={styles["project"]}
+      >
+        <div className={styles.w1}>
+          <div className={styles["work3"]}>
+            <div className={styles["image"]}>
+              <img className={styles["img"]} src={workimage4} alt="current" />
+            </div>
+            <div className={styles["texts"]}>
+              <h2 className={styles["title"]}>
+                Enabling Group Banking with Gwala
+              </h2>
+              <p className={styles["description"]}>
+                I helped improve early product features and user experience
+                through user feedback, achieving a large retention rate, and
+                developing the initial product lifecycle, go-to-market strategy,
+                and acquisition roadmap with early team members.
+              </p>
+              <a
+                target="blank"
                 className={styles["link"]}
-                href="https://www.africastartupfestival.com/en"
+                href="https://www.ourgwala.com/"
               >
                 Visit Site
               </a>
@@ -73,39 +139,6 @@ const Work: FC = () => {
         <div className={styles.w2}>
           <div className={styles["work2"]}>
             <div className={styles["image"]}>
-              <img className={styles["img"]} src={workimage4} alt="current" />
-            </div>
-            <div className={styles["texts"]}>
-              <h2 className={styles["title"]}>
-                Enabling Group Banking with Gwala
-              </h2>
-              <p className={styles["description"]}>
-                I helped improve early product features and user experience
-                through user feedback, achieving a large retention rate, and
-                developing the initial product lifecycle, go-to-market strategy,
-                and acquisition roadmap with early team members.
-              </p>
-              <a
-                target="blank"
-                className={styles["link2"]}
-                href="https://www.ourgwala.com/"
-              >
-                Visit Site
-              </a>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-      <motion.div
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ root: scrollRef, once: true }}
-        className={styles["project"]}
-      >
-        <div className={styles.w3}>
-          <div className={styles["work3"]}>
-            <div className={styles["image"]}>
               <img className={styles["img"]} src={workimage2} alt="current" />
             </div>
             <div className={styles["texts"]}>
@@ -120,7 +153,7 @@ const Work: FC = () => {
               </p>
               <a
                 target="blank"
-                className={styles["link"]}
+                className={styles["link2"]}
                 href="https://techcabal.com/2022/09/22/hankara-bridges-the-content-gap/"
               >
                 Visit Site
@@ -136,8 +169,8 @@ const Work: FC = () => {
         viewport={{ root: scrollRef, once: true }}
         className={styles["project"]}
       >
-        <div className={styles.w4}>
-          <div className={styles["work4"]}>
+        <div className={styles.w1}>
+          <div className={styles["work3"]}>
             <div className={styles["image"]}>
               <img className={styles["img"]} src={workimage3} alt="current" />
             </div>
@@ -152,7 +185,7 @@ const Work: FC = () => {
               </p>
               <a
                 target="blank"
-                className={styles["link2"]}
+                className={styles["link"]}
                 href="https://vc4a.com/ventures/bufexx/"
               >
                 Visit Site

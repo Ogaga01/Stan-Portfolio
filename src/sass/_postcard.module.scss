@@ -7,8 +7,8 @@
   padding: 1.2rem;
   width: 20%;
   height: 30rem;
-  background-color: $color-white;
-  color: $color-primary;
+  background-color: $color-primary;
+  color: $color-white;
 
   @include respond(mob-nav) {
     width: 75%;
@@ -48,7 +48,7 @@
 
 .writeup {
   margin-top: 2rem;
-  color: $color-primary;
+  color: $color-white;
 }
 
 .title {
