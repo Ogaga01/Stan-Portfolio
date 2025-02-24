@@ -219,7 +219,11 @@
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    height: 50vh;
+    height: 60vh;
+  }
+
+  @include respond(phone) {
+    height: 80vh;
   }
 }
 
