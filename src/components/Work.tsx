@@ -20,7 +20,6 @@ const cardVariants: Variants = {
     },
   },
 };
-
 const Work: FC = () => {
   const scrollRef = useRef(null);
 
@@ -197,5 +196,4 @@ const Work: FC = () => {
     </section>
   );
 };
-
 export default Work;
