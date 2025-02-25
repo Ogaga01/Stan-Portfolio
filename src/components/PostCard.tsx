@@ -7,10 +7,13 @@ interface Props {
 }
 
 const PostCard: FC<Props> = ({ props }) => {
-  const { title, description, link } = props;
+  const { title, description, image, link } = props;
 
   return (
     <a className={styles.postcard} target="blank" href={link}>
+      <div className={styles["image"]}>
+        <img className={styles["img"]} src={image} alt={title} />
+      </div>
       <div className={styles["writeup"]}>
         <h1 className={styles["title"]}>{title}</h1>
         <p className={styles["desc"]}>{description}</p>

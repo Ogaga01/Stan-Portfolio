@@ -19,7 +19,7 @@ const Post: FC = () => {
         </div>
         <div className={styles["blog"]}>
           {posts.map((post) => (
-            <PostCard props={post} />
+            <PostCard props={post} key={post.title} />
           ))}
         </div>
       </div>
