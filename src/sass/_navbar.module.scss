@@ -33,7 +33,7 @@
   justify-content: space-between;
   // justify-self: center;
   width: 25%;
-  gap: 20%;
+  gap: 10%;
 }
 
 .item {
@@ -44,7 +44,7 @@
   padding: 8px 20px;
   border-radius: 27px;
   transition: all 1s;
-  width: 40%;
+  width: 45%;
 
   &:hover {
     background-color: $color-white;
