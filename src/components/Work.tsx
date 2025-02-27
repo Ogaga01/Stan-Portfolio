@@ -79,10 +79,9 @@ const Work: FC = () => {
                 Curating memorable tech experiences with the Spark HQ
               </h2>
               <p className={styles["description"]}>
-                I stay at the forefront of brand communications for the Africa
-                Startup Festival, and the Africa Technology Expo. Crafting
-                design ideas, content and strategy framework, partnership,
-                media, and influencer engagement.
+                I led brand communications for the Africa Startup Festival and
+                Africa Technology Expo, shaping design, content, strategy,
+                partnerships, and media engagement.
               </p>
               <a
                 target="blank"

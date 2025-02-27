@@ -8,12 +8,6 @@ export const posts: Post[] = [
     link: "https://theswiish.substack.com/p/notes-on-taste",
   },
   {
-    title: '"Move Fast and Break Things" is Overrated',
-    image: "images/move-fast.jpg",
-    description: "On Building and Culture",
-    link: "https://theswiish.substack.com/p/move-fast-and-break-things-is-overrated",
-  },
-  {
     title: "Work Doctrine",
     image: "/images/work-doctrine.jpg",
     description: "some things that makes the work better.",
