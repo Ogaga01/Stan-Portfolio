@@ -4,10 +4,17 @@
   display: flex;
   flex-direction: column;
   padding: 1.2rem;
-  width: 20%;
-  height: 30rem;
+  width: 30%;
+  height: 31rem;
   background-color: $color-primary;
   color: $color-white;
+
+  @include respond(tab-land) {
+    width: 30%;
+  }
+  @include respond(tab-port) {
+    width: 30%;
+  }
 
   @include respond(mob-nav) {
     width: 75%;
