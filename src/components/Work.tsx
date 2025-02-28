@@ -40,8 +40,7 @@ const Work: FC = () => {
             <div className={styles["texts"]}>
               <p className={styles.current}>Current</p>
               <h2 className={styles["title"]}>
-                Engaging Platforms and Community at Africa’s foremost VC firm,
-                Oui Capital.
+                Engaging Platforms and Community at Oui Capital.
               </h2>
               <p className={styles["description"]}>
                 I collaborate with the investment team on announcements and
@@ -76,7 +75,7 @@ const Work: FC = () => {
             </div>
             <div className={styles["texts"]}>
               <h2 className={styles["title"]}>
-                Curating memorable tech experiences with the Spark HQ
+                Curating memorable tech experiences with Spark HQ
               </h2>
               <p className={styles["description"]}>
                 I led brand communications for the Africa Startup Festival and
