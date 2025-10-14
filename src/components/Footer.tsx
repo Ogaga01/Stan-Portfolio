@@ -13,13 +13,13 @@ const Footer: FC = () => {
           <p className={styles["name"]}>Stanley Osi.</p>
         </div>
         <div className={styles["links"]}>
-          <a
+          {/* <a
             className={styles["socials"]}
             href="https://wa.me/+2348034467139"
             target="blank"
           >
             <BsWhatsapp className={styles["icon"]} />
-          </a>
+          </a> */}
           <a
             className={styles["socials"]}
             href="https://mailto:vocal4real@gmail.com"
