@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { BsWhatsapp } from "react-icons/bs";
+// import { BsWhatsapp } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
 import { RiLinkedinBoxLine } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
