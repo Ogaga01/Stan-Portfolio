@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# Stanley Osi Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page personal portfolio for Stanley Osi, built with React, TypeScript, Vite, Tailwind CSS, and Framer Motion.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Install dependencies:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Start the local development server:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+Run linting:
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+- `src/App.tsx` composes the page sections.
+- `src/components/` contains the portfolio sections and cards.
+- `src/types/posts.ts` contains writing links shown in the writing section.
+- `src/types/works.ts` contains selected work entries shown in the work section.
+- `src/index.css` contains Tailwind directives, global base styles, and small shared utilities.
+- `tailwind.config.js` contains theme tokens, font families, and dark mode configuration.
+- `public/_redirects` provides a static host fallback to `index.html`.
+
+## Styling
+
+The UI is styled with Tailwind CSS utility classes. Dark mode uses Tailwind's class strategy and is controlled from `src/App.tsx`. The selected theme is stored in `localStorage`; first-time visitors inherit their system preference.
+
+## Updating Content
+
+Edit work entries in `src/types/works.ts`. Each item needs a title, organization, description, image, and external link.
+
+Edit writing entries in `src/types/posts.ts`. Images referenced with `/images/...` should live in `public/images`.
+
+## Deployment
+
+The app builds to `dist/` through Vite. Static hosts such as Netlify can serve that output directly. The included `public/_redirects` file supports client-side fallback routing if routes are added later.

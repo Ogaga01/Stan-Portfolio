@@ -1,197 +1,64 @@
-import { FC, useRef } from "react";
+import { FC } from "react";
 import { motion, Variants } from "framer-motion";
-import workimage2 from "./../images/hankara2.jpg";
-import workimage3 from "./../images/buffex.jpg";
-import workimage4 from "./../images/gwala2.jpg";
-import spark from "./../images/spark3.jpg";
-import oui from "./../images/oui.jpg";
-import styles from "./../sass/_works.module.scss";
+import { works } from "../types/works";
+import WorkCard from "./WorkCard";
 
 const cardVariants: Variants = {
   offscreen: {
-    scale: 0.5,
+    y: 48,
     opacity: 0,
   },
   onscreen: {
-    scale: 1,
+    y: 0,
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.65,
+      ease: "easeOut",
     },
   },
 };
-const Work: FC = () => {
-  const scrollRef = useRef(null);
 
+const Work: FC = () => {
   return (
-    <section className={styles.work}>
-      <motion.div
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ root: scrollRef, once: true }}
-        className={styles["project"]}
-      >
-        <div className={styles.w1}>
-          <div className={styles["currentwork"]}>
-            <div className={styles["image"]}>
-              <img className={styles["img"]} src={oui} alt="current" />
-            </div>
-            <div className={styles["texts"]}>
-              <p className={styles.current}>Current</p>
-              <h2 className={styles["title"]}>
-                Engaging Platforms and Community at Oui Capital.
-              </h2>
-              <p className={styles["description"]}>
-                I collaborate with the investment team on announcements and
-                support for portfolio companies. Along with planning community
-                events and fostering partnerships in the startup ecosystem.
-              </p>
-              <a
-                target="blank"
-                className={styles["link"]}
-                href="https://www.ouicapital.vc/"
-              >
-                Visit Site
-              </a>
-            </div>
+    <section
+      className="bg-white py-14 transition-colors duration-300 dark:bg-slate-950 sm:py-20"
+      aria-labelledby="work-heading"
+    >
+      <div className="section-shell">
+        <div className="mb-10 flex flex-col gap-5 md:mb-14 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="section-kicker">Selected experience</p>
+            <h1
+              id="work-heading"
+              className="mt-3 max-w-3xl text-3xl font-black leading-tight text-ink dark:text-white sm:text-4xl lg:text-5xl"
+            >
+              Work across venture capital, story telling, product, and culture.
+            </h1>
           </div>
+          {/* <p className="max-w-sm text-base leading-7 text-charcoal dark:text-slate-300">
+            A compact view of current and past work using the same portfolio
+            resources, sharpened into a more scannable layout.
+          </p> */}
         </div>
-      </motion.div>
-      <div className={styles.heading}>
-        <h1 className={styles["h1"]}>PAST EXPERIENCES</h1>
+        <div className="mx-auto grid max-w-6xl gap-5 lg:gap-6">
+          {works.map((work, index) => (
+            <motion.div
+              key={work.organization}
+              variants={cardVariants}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <WorkCard
+                work={work}
+                variant={index % 2 === 0 ? "filled" : "plain"}
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
-      <motion.div
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ root: scrollRef, once: true }}
-        className={styles["project"]}
-      >
-        <div className={styles.w2}>
-          <div className={styles["work2"]}>
-            <div className={styles["image"]}>
-              <img className={styles["img"]} src={spark} alt="spark" />
-            </div>
-            <div className={styles["texts"]}>
-              <h2 className={styles["title"]}>
-                Curating memorable tech experiences with Spark HQ
-              </h2>
-              <p className={styles["description"]}>
-                I led brand communications for the Africa Startup Festival and
-                Africa Technology Expo, shaping design, content, strategy,
-                partnerships, and media engagement.
-              </p>
-              <a
-                target="blank"
-                className={styles["link2"]}
-                href="https://sparkafrica.co/"
-              >
-                Visit Site
-              </a>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-      <motion.div
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ root: scrollRef, once: true }}
-        className={styles["project"]}
-      >
-        <div className={styles.w1}>
-          <div className={styles["work3"]}>
-            <div className={styles["image"]}>
-              <img className={styles["img"]} src={workimage4} alt="current" />
-            </div>
-            <div className={styles["texts"]}>
-              <h2 className={styles["title"]}>
-                Enabling Group Banking with Gwala
-              </h2>
-              <p className={styles["description"]}>
-                I helped improve early product features and user experience
-                through user feedback, achieving a large retention rate, and
-                developing the initial product lifecycle, go-to-market strategy,
-                and acquisition roadmap with early team members.
-              </p>
-              <a
-                target="blank"
-                className={styles["link"]}
-                href="https://www.ourgwala.com/"
-              >
-                Visit Site
-              </a>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-      <motion.div
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ root: scrollRef, once: true }}
-        className={styles["project"]}
-      >
-        <div className={styles.w2}>
-          <div className={styles["work2"]}>
-            <div className={styles["image"]}>
-              <img className={styles["img"]} src={workimage2} alt="current" />
-            </div>
-            <div className={styles["texts"]}>
-              <h2 className={styles["title"]}>
-                Hankara Bridges the Content Gap
-              </h2>
-              <p className={styles["description"]}>
-                I collaborated with the founder of Hankara to enhance
-                visibility, foster partnerships, and led the team of three,
-                while also managing two flagship initiatives: an accelerator
-                program and a physical activation event.
-              </p>
-              <a
-                target="blank"
-                className={styles["link2"]}
-                href="https://techcabal.com/2022/09/22/hankara-bridges-the-content-gap/"
-              >
-                Visit Site
-              </a>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-      <motion.div
-        variants={cardVariants}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ root: scrollRef, once: true }}
-        className={styles["project"]}
-      >
-        <div className={styles.w1}>
-          <div className={styles["work3"]}>
-            <div className={styles["image"]}>
-              <img className={styles["img"]} src={workimage3} alt="current" />
-            </div>
-            <div className={styles["texts"]}>
-              <h2 className={styles["title"]}>
-                Buffex: Money without Boundaries.
-              </h2>
-              <p className={styles["description"]}>
-                I collaborated with the founding team to develop the initial
-                content strategy and product roadmap while contributing to early
-                product concepts and features.
-              </p>
-              <a
-                target="blank"
-                className={styles["link"]}
-                href="https://vc4a.com/ventures/bufexx/"
-              >
-                Visit Site
-              </a>
-            </div>
-          </div>
-        </div>
-      </motion.div>
     </section>
   );
 };
+
 export default Work;
