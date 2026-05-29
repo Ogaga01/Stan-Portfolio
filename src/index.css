@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-slate-50 font-sans text-ink antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100;
+  }
+
+  a {
+    @apply underline-offset-4;
+  }
+
+  button,
+  a {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-coral;
+  }
+}
+
+@layer utilities {
+  @keyframes fadeSlide {
+    from {
+      opacity: 0;
+      transform: translateX(-2rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .text-fluid-hero {
+    font-size: clamp(3rem, 8.6vw, 7.25rem);
+    line-height: 0.9;
+  }
+
+  .text-fluid-body {
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+    line-height: 1.7;
+  }
+
+  .section-kicker {
+    @apply text-xs font-black uppercase tracking-[0.22em] text-coral;
+  }
+}
