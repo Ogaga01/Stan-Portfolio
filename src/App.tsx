@@ -5,6 +5,7 @@
 // import Navbar from "./components/Navbar";
 // import Post from "./components/Post";
 // import Work from "./components/Work";
+import StanleyOsiSite from "./components/StanleyOsiSite";
 
 // type Theme = "light" | "dark";
 
@@ -43,12 +44,8 @@ function App() {
     //   <Post />
     //   <Footer />
     // </div>
-    <iframe
-      src="/public/stanley-osi-personal-site.html"
-      title="Embedded HTML"
-      width="100%"
-      height="950px"
-    />
+    //
+    <StanleyOsiSite />
   );
 }
 
